@@ -1,0 +1,490 @@
+/* define base color scheme */
+:root {
+    --col1: #FFB448;
+    --col2: #3C2D4D;
+    --col3: #EDEDEA;
+
+    --col11: #FFC77D;
+    --col12: #645D7B;
+
+    --col21: #FFD8A2;
+    --col22: #8D879B;
+
+    --text: #D8F3DC;
+}
+
+
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    background-color: white;
+    color: #272727;
+}
+
+/* Header section */
+header nav {
+    background-color: var(--col2);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+}
+
+header nav a {
+    color: var(--col11);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 18px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: var(--col11);
+    color: var(--col2);
+}
+
+header nav a.active {
+    background-color: var(--col21);
+}
+
+header {
+    background-color: var(--col3);
+    margin: 0;
+    border-bottom: 2px solid black;
+    padding: 0.5em 2em;
+}
+
+header h1 {
+    color: var(--col2);
+    font-size: 30px;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header p {
+    text-align: right;
+    font-size: smaller;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+header .logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--col2);
+    color: white;          
+    cursor: pointer;
+    border-radius: 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+header .logout-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--col11);
+}
+
+header .welcome {
+    color: white;
+}
+
+footer {
+    clear: both;
+    margin-top: 1em;
+    padding-right: 1em;
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+html {
+    background-color: var(--col3);    
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section - Full Screen */
+.hero {
+    background:url('/img/eeg2.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: white;
+    color: #f06595;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #f06595;
+    color: white;
+}
+
+/* Features Section - Full Screen Responsiveness */
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh; /* Ensure the section covers full screen height */
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .features h2 {
+        font-size: 2em;
+    }
+
+    .feature-card {
+        flex-basis: 80%; /* Stack the feature cards on smaller screens */
+    }
+}
+
+
+/* Form styling */
+form {
+       display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+input[type=text], input[type=password], textarea, select {
+    font-size: 100%;
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+  	width:100%;
+    background-color: var(--col2);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--col22);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--col11);
+}
+
+/* Table styling */
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: var(--col21);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: var(--col2);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+tr:nth-child(even) {
+    background-color: var(--col11);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-card {
+        flex-basis: 80%;
+    }
+}
+
+/* Other utility styles */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.homepage .box {
+    flex: 1 0 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.homepage .box h2 {
+    margin-top: 0;
+}
+
+.homepage .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb448;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.homepage .icon-container i {
+    color: #212529;
+    font-size: 3em;
+}
+
+.introduction {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* EEG Table Styling */
+#eeg-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+#eeg-table th, #eeg-table td {
+    padding: 12px 15px;
+}
+
+#eeg-table th {
+    background-color: var(--col2);
+    color: white;
+    text-align: center;
+}
+
+#eeg-table tr {
+    border-bottom: 1px solid var(--col11);
+}
+
+#eeg-table tr:nth-child(even) {
+    background-color: var(--col21);
+}
+
+#eeg-table tr:hover {
+    background-color: var(--col12);
+}
+
+#eeg-table .details-row {
+    background-color: var(--col3);
+}
+
+#eeg-table .details-row td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--col2);
+}
+
+/* Button Styling */
+.button {
+    background-color: var(--col2);
+
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--col11);
+    color: var(--col2);
+}
+
+/* Responsive Table Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+
+
+/* Navbar styles */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/* Welcome and logout button styles */
+.welcome {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.logout-button {
+    background-color: #f06595;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #444;
+}
+
+/* Mobile menu icon */
+.menu-icon {
+    display: none; /* Hidden on larger screens */
+    font-size: 2em;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide the navigation menu */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Show the navbar when the menu icon is clicked */
+    nav.active {
+        display: flex;
+    }
+
+    /* Show the hamburger icon */
+    .menu-icon {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+}
+
+

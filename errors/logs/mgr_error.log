@@ -1,0 +1,140 @@
+
+[17-Jul-2024 14:50:50 Australia/Brisbane] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 13
+[17-Jul-2024 14:50:50 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php on line 62
+[17-Jul-2024 15:07:36 Australia/Brisbane] PHP Warning:  include(/mgr_eeg_upload.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php on line 334
+[17-Jul-2024 15:07:36 Australia/Brisbane] PHP Warning:  include(): Failed opening '/mgr_eeg_upload.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php on line 334
+[17-Jul-2024 16:14:55 Australia/Brisbane] PHP Fatal error:  Uncaught Error: Call to undefined function get_dl_row() in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php:411
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php on line 411
+[17-Jul-2024 16:16:11 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eeg_data_and_publication_platform.public' doesn't exist in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:24
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(24): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php(412): get_dl_row()
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 24
+[22-Jul-2024 10:38:19 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 10:47:07 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 10:51:24 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 10:57:13 Australia/Brisbane] PDOException while deleting EEG record with ID 6: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 10:57:39 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php:112
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php(112): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php(148): delete_publication('1')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php on line 112
+[22-Jul-2024 10:59:33 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php:112
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php(112): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php(148): delete_publication('4')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php on line 112
+[22-Jul-2024 10:59:43 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php:112
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php(112): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php(148): delete_publication('1')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\publications_db.php on line 112
+[22-Jul-2024 11:03:11 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 11:06:02 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 11:06:32 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 11:12:41 Australia/Brisbane] PHP Warning:  Undefined variable $eegID in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php on line 161
+[22-Jul-2024 11:12:41 Australia/Brisbane] PDOException while deleting EEG record with ID : SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 11:13:01 Australia/Brisbane] PHP Warning:  Undefined variable $pubID in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php on line 161
+[22-Jul-2024 11:13:01 Australia/Brisbane] PDOException while deleting EEG record with ID : SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 11:15:11 Australia/Brisbane] PDOException while deleting publication with ID 4: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[22-Jul-2024 11:15:51 Australia/Brisbane] PDOException while deleting publication with ID 1: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails
+[23-Jul-2024 07:56:55 Australia/Brisbane] PDOException while deleting publication with ID 1: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[23-Jul-2024 08:08:39 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[23-Jul-2024 08:09:19 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[23-Jul-2024 08:10:29 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[23-Jul-2024 08:11:04 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[23-Jul-2024 08:11:46 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[23-Jul-2024 14:20:26 Australia/Brisbane] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[23-Jul-2024 18:21:30 Australia/Brisbane] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 13
+[23-Jul-2024 18:21:30 Australia/Brisbane] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 24
+[24-Jul-2024 13:19:08 Australia/Brisbane] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 13
+[26-Jul-2024 07:48:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 13
+[26-Jul-2024 07:56:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 13
+[26-Jul-2024 08:17:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 13
+[26-Jul-2024 08:23:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 13
+[26-Jul-2024 08:25:01 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php:9
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php(9): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php(66): is_valid_manager_login('manager@eegdata...', '6c3a32cd6971bd8...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 9
+[26-Jul-2024 08:25:31 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 14
+[26-Jul-2024 08:25:31 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: hash_equals(): Argument #1 ($known_string) must be of type string, null given in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php:14
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php(14): hash_equals(Object(SensitiveParameterValue), Object(SensitiveParameterValue))
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\manager\index.php(66): is_valid_manager_login('manager@eegdata...', 'f34e406ff845131...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\manager_db.php on line 14
+[24-Oct-2024 05:59:06 Europe/Berlin] PHP Warning:  move_uploaded_file(../uploads/pub_uploads/EEG_Dh7g_20090902_17-20.pdf): Failed to open stream: Permission denied in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php on line 223
+[24-Oct-2024 05:59:06 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/Applications/XAMPP/xamppfiles/temp/phpCD4Oj1&quot; to &quot;../uploads/pub_uploads/EEG_Dh7g_20090902_17-20.pdf&quot; in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php on line 223
+[03-Nov-2024 03:54:07 Europe/Berlin] PHP Warning:  move_uploaded_file(../uploads/eeg_uploads/asaw.pdf): Failed to open stream: Permission denied in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php on line 385
+[03-Nov-2024 03:54:07 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/Applications/XAMPP/xamppfiles/temp/phpv9bbDU&quot; to &quot;../uploads/eeg_uploads/asaw.pdf&quot; in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php on line 385
+[03-Nov-2024 04:23:43 Europe/Berlin] PHP Warning:  move_uploaded_file(../uploads/eeg_uploads/asaw.pdf): Failed to open stream: Permission denied in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php on line 385
+[03-Nov-2024 04:23:43 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/Applications/XAMPP/xamppfiles/temp/phpGniuYd&quot; to &quot;../uploads/eeg_uploads/asaw.pdf&quot; in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php on line 385
+[03-Nov-2024 04:31:59 Europe/Berlin] PHP Warning:  Undefined variable $userID in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php on line 390
+[03-Nov-2024 04:31:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'userID' cannot be null in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/eeg_db.php:22
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/eeg_db.php(22): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/manager/index.php(390): upload_eeg(NULL, 'wdawda', 'adar', '../uploads/eeg_...', '0')
+#2 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/eeg_db.php on line 22
+[03-Nov-2024 04:37:48 Europe/Berlin] Debug: user_ID = 11, eeg_title = efef, eeg_descr = fnwewe, target_file = ../uploads/eeg_uploads/dasdsadfa.pdf, pubID = 4
+[03-Nov-2024 05:09:15 Europe/Berlin] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[03-Nov-2024 05:09:32 Europe/Berlin] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[03-Nov-2024 05:09:36 Europe/Berlin] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[14-Nov-2024 13:56:41 Europe/Berlin] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[14-Nov-2024 13:56:59 Europe/Berlin] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[15-Nov-2024 06:54:45 Europe/Berlin] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[15-Nov-2024 06:55:13 Europe/Berlin] PHP Warning:  Undefined variable $pubDate in C:\xampp\htdocs\manager\index.php on line 235
+[15-Nov-2024 06:55:13 Europe/Berlin] PHP Warning:  Undefined variable $Token_ID in C:\xampp\htdocs\manager\index.php on line 235
+[15-Nov-2024 06:55:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pubDate' cannot be null in C:\xampp\htdocs\model\publications_db.php:76
+Stack trace:
+#0 C:\xampp\htdocs\model\publications_db.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\manager\index.php(235): upload_publication(NULL, 11, 'qqq', 'qq', '../uploads/pub_...', '0', NULL)
+#2 {main}
+  thrown in C:\xampp\htdocs\model\publications_db.php on line 76
+[15-Nov-2024 06:58:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function getusername() in C:\xampp\htdocs\manager\index.php:211
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\manager\index.php on line 211
+[15-Nov-2024 07:00:28 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pubDate' cannot be null in C:\xampp\htdocs\model\publications_db.php:76
+Stack trace:
+#0 C:\xampp\htdocs\model\publications_db.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\manager\index.php(242): upload_publication(NULL, 11, 'a', 'a', '../uploads/pub_...', '0', '1360234a')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\publications_db.php on line 76
+[15-Nov-2024 07:05:46 Europe/Berlin] PHP Warning:  Undefined variable $pubLink in C:\xampp\htdocs\manager\index.php on line 165
+[15-Nov-2024 12:45:52 Europe/Berlin] PHP Warning:  Undefined variable $eeg_mrg_date in C:\xampp\htdocs\model\eeg_db.php on line 10
+[15-Nov-2024 12:45:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\model\eeg_db.php:23
+Stack trace:
+#0 C:\xampp\htdocs\model\eeg_db.php(23): PDOStatement->execute()
+#1 C:\xampp\htdocs\manager\index.php(431): upload_eeg('2024-11-04', 11, 'abc', 'abc', '../uploads/eeg_...', '0')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\eeg_db.php on line 23
+[15-Nov-2024 12:48:53 Europe/Berlin] PHP Warning:  Undefined variable $eeg_mrg_date in C:\xampp\htdocs\model\eeg_db.php on line 10
+[15-Nov-2024 12:48:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eeg_mgr_date' in 'field list' in C:\xampp\htdocs\model\eeg_db.php:23
+Stack trace:
+#0 C:\xampp\htdocs\model\eeg_db.php(23): PDOStatement->execute()
+#1 C:\xampp\htdocs\manager\index.php(431): upload_eeg('2024-11-08', 11, 'abc', 'abc', '../uploads/eeg_...', '0')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\eeg_db.php on line 23
+[15-Nov-2024 12:49:37 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eeg_mgr_date' in 'field list' in C:\xampp\htdocs\model\eeg_db.php:23
+Stack trace:
+#0 C:\xampp\htdocs\model\eeg_db.php(23): PDOStatement->execute()
+#1 C:\xampp\htdocs\manager\index.php(431): upload_eeg('2024-11-08', 11, 'abc', 'abc', '../uploads/eeg_...', '0')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\eeg_db.php on line 23
+[15-Nov-2024 12:52:08 Europe/Berlin] PHP Warning:  Undefined variable $eeg_mgr_date in C:\xampp\htdocs\manager\index.php on line 431
+[16-Nov-2024 12:33:45 Europe/Berlin] PDOException in delete_eeg function: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`eeg_data_and_publication_platform`.`public_users`, CONSTRAINT `public_users_ibfk_1` FOREIGN KEY (`eegID`) REFERENCES `eeg` (`eegID`))
+[16-Nov-2024 12:34:36 Europe/Berlin] PHP Warning:  Undefined variable $eeg_mgr_date in C:\xampp\htdocs\manager\index.php on line 436
+[16-Nov-2024 12:40:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "eegDate" in C:\xampp\htdocs\manager\index.php:404
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\manager\index.php on line 404
+[16-Nov-2024 12:41:11 Europe/Berlin] PHP Warning:  Undefined variable $eeg_mgr_date in C:\xampp\htdocs\manager\index.php on line 436

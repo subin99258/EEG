@@ -1,0 +1,7 @@
+[23-Jul-2024 08:21:56 Australia/Brisbane] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$Encryption is deprecated in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\contactUs\index.php on line 61
+[23-Jul-2024 17:32:14 Australia/Brisbane] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$Encryption is deprecated in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\contactUs\index.php on line 61
+[23-Jul-2024 18:20:19 Australia/Brisbane] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$Encryption is deprecated in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\contactUs\index.php on line 61
+[24-Oct-2024 07:48:22 Europe/Berlin] PHP Warning:  Undefined variable $Name in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/contactUs/index.php on line 40
+[24-Oct-2024 07:48:22 Europe/Berlin] PHP Warning:  Undefined variable $Name in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/contactUs/index.php on line 72
+[25-Oct-2024 12:54:18 Europe/Berlin] PHP Warning:  Undefined variable $Name in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/contactUs/index.php on line 40
+[25-Oct-2024 12:54:18 Europe/Berlin] PHP Warning:  Undefined variable $Name in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/contactUs/index.php on line 72

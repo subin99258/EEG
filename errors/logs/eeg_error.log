@@ -1,0 +1,229 @@
+[15-Jul-2024 09:01:52 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:02:54 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:03:13 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:04:10 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:04:28 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:04:45 Australia/Brisbane] PHP Fatal error:  Uncaught Error: Undefined constant "INPUT_PPOST" in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php:42
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 42
+[15-Jul-2024 09:04:51 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:05:08 Australia/Brisbane] PHP Fatal error:  Uncaught Error: Undefined constant "INPUT_PPOST" in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php:42
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 42
+[15-Jul-2024 09:05:48 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:06:06 Australia/Brisbane] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 47
+[15-Jul-2024 09:06:06 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'view_time' in 'field list' in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:15
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(47): add_public_user(NULL, 'Public', 'Tester', 'test@publicuser...', '2024-07-15 09:0...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 15
+[15-Jul-2024 09:08:19 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:08:29 Australia/Brisbane] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 47
+[15-Jul-2024 09:08:29 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:15
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(47): add_public_user(NULL, 'test', 'public', 'test@public.com', '2024-07-15 09:0...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 15
+[15-Jul-2024 09:09:16 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:09:28 Australia/Brisbane] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 47
+[15-Jul-2024 09:09:28 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:15
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(47): add_public_user(NULL, 'Pubic', 'Tester', 'test@public.com', '2024-07-15 09:0...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 15
+[15-Jul-2024 09:11:16 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:12:43 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:12:46 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:12:47 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:18:51 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:20:19 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:21:11 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:21:35 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:22:58 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:23:45 Australia/Brisbane] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\view\header.php on line 2
+[15-Jul-2024 09:26:28 Australia/Brisbane] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 55
+[15-Jul-2024 09:26:28 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:15
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(55): add_public_user(NULL, 'Public', 'Test', 'public@test.com', '2024-07-15 09:2...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 15
+[15-Jul-2024 09:27:31 Australia/Brisbane] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 55
+[15-Jul-2024 09:27:31 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:15
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(55): add_public_user(NULL, 'Public', 'Test', 'test@public.com', '2024-07-15 09:2...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 15
+[15-Jul-2024 09:28:17 Australia/Brisbane] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 55
+[15-Jul-2024 09:28:17 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:15
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(55): add_public_user(NULL, 'Public', 'Test', 'test@public.com', '2024-07-15 09:2...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 15
+[15-Jul-2024 09:57:18 Australia/Brisbane] PHP Fatal error:  Uncaught Error: Call to undefined function indluce() in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php:55
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 55
+[15-Jul-2024 10:08:13 Australia/Brisbane] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 55
+[15-Jul-2024 10:08:13 Australia/Brisbane] PHP Warning:  Undefined variable $last_name in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 57
+[15-Jul-2024 10:08:33 Australia/Brisbane] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 55
+[15-Jul-2024 10:08:33 Australia/Brisbane] PHP Warning:  Undefined variable $last_name in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 57
+[15-Jul-2024 10:15:14 Australia/Brisbane] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gsdf@sarf.com' for key 'email' in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php:16
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php(16): PDOStatement->execute()
+#1 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(66): add_public_user('Genetic Variant...', 'gdsfg', 'sdfgds', 'gsdf@sarf.com', '2', '2024-07-15 10:1...')
+#2 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\model\public_user_db.php on line 16
+[17-Jul-2024 06:02:00 Europe/Berlin] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$Encryption is deprecated in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 84
+[21-Jul-2024 17:39:36 Australia/Brisbane] PHP Warning:  Undefined variable $mailLogFile in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 124
+[21-Jul-2024 17:39:36 Australia/Brisbane] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php:124
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(124): error_log('Message could n...', 3, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 124
+[21-Jul-2024 17:40:41 Australia/Brisbane] PHP Warning:  Undefined variable $mailLogFile in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 124
+[21-Jul-2024 17:40:41 Australia/Brisbane] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php:124
+Stack trace:
+#0 C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php(124): error_log('Message could n...', 3, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\UniSQ-EEG-Publications-Platform\eeg\index.php on line 124
+Message could not be sent. Mailer Error: SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending limit exceeded. For more information on Gmail
+sending limits go to
+ https://support.google.com/a/answer/166852 d9443c01a7336-1fd6f44e94bsm32246645ad.214 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5Message could not be sent. Mailer Error: SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending limit exceeded. For more information on Gmail
+sending limits go to
+ https://support.google.com/a/answer/166852 d9443c01a7336-1fd6f317ed7sm32411885ad.138 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5Message could not be sent. Mailer Error: SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending limit exceeded. For more information on Gmail
+sending limits go to
+ https://support.google.com/a/answer/166852 98e67ed59e1d1-2ccf808f013sm4624725a91.35 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5Message could not be sent. Mailer Error: SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending limit exceeded. For more information on Gmail
+sending limits go to
+ https://support.google.com/a/answer/166852 98e67ed59e1d1-2cb77540a84sm6675935a91.52 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5Message could not be sent. Mailer Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/TroubleshootingMessage could not be sent. Mailer Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/TroubleshootingMessage could not be sent. Mailer Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting[25-Oct-2024 12:56:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php:16
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php(16): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(99): add_public_user(NULL, 'subin', 'maharjan', 'subinmaharjan01...', '1', '2024-10-25 12:5...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(72): handleEEGAgreement(Object(PHPMailer\PHPMailer\PHPMailer))
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php on line 16
+[25-Oct-2024 13:00:07 Europe/Berlin] PHP Warning:  Undefined variable $eegDate in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 99
+[25-Oct-2024 13:00:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php:17
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php(17): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(99): add_public_user(NULL, 'subin', 'maharjan', 'subinmaharjan01...', '1', NULL, '2024-10-25 13:0...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(72): handleEEGAgreement(Object(PHPMailer\PHPMailer\PHPMailer))
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php on line 17
+[25-Oct-2024 13:01:52 Europe/Berlin] PHP Warning:  Undefined variable $eegDate in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 99
+[25-Oct-2024 13:01:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php:17
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php(17): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(99): add_public_user(NULL, 'sadas', 'asdasd', 'asdas@gmail.com', '1', NULL, '2024-10-25 13:0...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(72): handleEEGAgreement(Object(PHPMailer\PHPMailer\PHPMailer))
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php on line 17
+[25-Oct-2024 13:16:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php:17
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php(17): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(99): add_public_user(NULL, 'sam', 'sammm', 'sam@umail.com', '1', '2024-10-25 13:1...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(72): handleEEGAgreement(Object(PHPMailer\PHPMailer\PHPMailer))
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php on line 17
+[25-Oct-2024 13:24:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php:17
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php(17): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(127): add_public_user(NULL, 'Subin', 'Maharjan', 'subinmaharjan01...', '1', '2024-10-25 13:2...')
+#2 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php on line 17
+[25-Oct-2024 13:40:41 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 116
+[25-Oct-2024 13:40:41 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 117
+[30-Oct-2024 12:14:26 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 116
+[30-Oct-2024 12:14:26 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 117
+[30-Oct-2024 12:14:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'subinmaharjan01@gmail.com' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php:17
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php(17): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(127): add_public_user('Untitled EEG', 'subin', 'maharjan', 'subinmaharjan01...', '1', '2024-10-30 12:1...')
+#2 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php on line 17
+[30-Oct-2024 12:16:49 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 116
+[30-Oct-2024 12:16:49 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 117
+[30-Oct-2024 12:19:41 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 116
+[30-Oct-2024 12:19:41 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 117
+[03-Nov-2024 09:34:20 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 116
+[03-Nov-2024 09:34:20 Europe/Berlin] PHP Warning:  Undefined variable $title in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php on line 117
+[03-Nov-2024 09:34:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'subinmaharjan01@gmail.com' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php:17
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php(17): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/eeg/index.php(127): add_public_user('Untitled EEG', 'Subin', 'Maharjan', 'subinmaharjan01...', '7', '2024-11-03 09:3...')
+#2 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/UniSQ_EEG_publications_platform/model/public_user_db.php on line 17
+[06-Nov-2024 05:45:54 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(132): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '1', '2024-11-06 05:4...', '47801497')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
+[06-Nov-2024 05:51:06 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(132): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '2', '2024-11-06 05:5...', '80c3976a')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
+[06-Nov-2024 06:02:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(132): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '1', '2024-11-06 06:0...', 'f5deeac4')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
+[06-Nov-2024 06:12:22 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(137): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '1', '2024-11-06 06:1...', 'c501d97f')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
+[06-Nov-2024 06:15:06 Europe/Berlin] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\eeg\index.php on line 58
+[06-Nov-2024 06:16:45 Europe/Berlin] PHP Warning:  Undefined variable $eeg_title in C:\xampp\htdocs\eeg\index.php on line 64
+[06-Nov-2024 06:16:51 Europe/Berlin] PHP Warning:  Undefined variable $eeg_title in C:\xampp\htdocs\eeg\index.php on line 64
+[06-Nov-2024 06:20:17 Europe/Berlin] PHP Warning:  Undefined variable $eeglink in C:\xampp\htdocs\eeg\index.php on line 64
+[06-Nov-2024 06:21:39 Europe/Berlin] PHP Warning:  Undefined variable $eeg_title in C:\xampp\htdocs\eeg\index.php on line 64
+[06-Nov-2024 06:26:16 Europe/Berlin] PHP Warning:  Undefined variable $eeg_title in C:\xampp\htdocs\eeg\index.php on line 64
+[06-Nov-2024 06:26:51 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(137): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '2', '2024-11-06 06:2...', '4810f019')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
+[06-Nov-2024 06:27:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(137): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '2', '2024-11-06 06:2...', '4664cde7')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
+[06-Nov-2024 06:29:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(137): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '2', '2024-11-06 06:2...', '010cb52e')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
+[06-Nov-2024 07:06:06 Europe/Berlin] PHP Warning:  Undefined variable $eegTitle in C:\xampp\htdocs\eeg\index.php on line 58
+[06-Nov-2024 07:25:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 299
+[06-Nov-2024 07:25:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 299
+[06-Nov-2024 07:25:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 299
+[06-Nov-2024 07:28:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 299
+[06-Nov-2024 07:30:10 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 299
+[06-Nov-2024 07:30:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 299
+[06-Nov-2024 07:32:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 311
+[06-Nov-2024 07:32:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\eeg\eeg_list.php on line 311
+[06-Nov-2024 15:13:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'eegTitle' cannot be null in C:\xampp\htdocs\model\public_user_db.php:17
+Stack trace:
+#0 C:\xampp\htdocs\model\public_user_db.php(17): PDOStatement->execute()
+#1 C:\xampp\htdocs\eeg\index.php(132): add_public_user(NULL, 'abc', 'cdr', 'deshaja4n@gmail...', '1', '2024-11-06 15:1...', '1ef128dd')
+#2 {main}
+  thrown in C:\xampp\htdocs\model\public_user_db.php on line 17
