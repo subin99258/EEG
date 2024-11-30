@@ -29,7 +29,7 @@
 
         body {
             font-family: Arial, sans-serif;
-           background-color: var(--col2); /* Changed to var(--col1) for a vibrant background */
+           background-color: var(--col2); 
         color: var(--col2);
             margin: 0;
             padding: 0px;

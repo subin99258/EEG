@@ -9,7 +9,7 @@
             --col11: #FFC77D; /* Hover color */
             --col12: #645D7B; /* Input background */
             --text-color: #333;
-            --error-color: #ff4444; /* Bright red for error visibility */
+            --error-color: #ff4444; 
         }
 
         body {
@@ -24,28 +24,27 @@
             margin: 40px auto;
             padding: 20px;
             background-color: var(--col2);
-            border-radius: 1px;
+            border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2, h3 {
             text-align: center;
-            color: var(--text);
+            color: var(--col1);
             margin-bottom: 20px;
         }
 
         form {
-            display: flex-start;
+            display: flex;
             flex-direction: column;
-            gap: 5px;
-	 	  padding-left: 0;
-		margin: 5%
-		
+            gap: 15px;
+            padding: 0 10px;
         }
 
         label {
-            color: var(--text);
+            color: var(--col1);
             font-size: 14px;
+            font-weight: bold;
         }
 
         input[type="text"], input[type="email"] {
@@ -55,7 +54,8 @@
             background-color: var(--col12);
             color: var(--col1);
             font-size: 14px;
-            width: 95%;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         button[type="submit"] {
@@ -80,13 +80,11 @@
             background-color: var(--col3);
             padding: 15px;
             border-radius: 8px;
-		width: 650px;
-		
-
+            margin-bottom: 20px;
         }
 
         .error-message {
-            color: var(--error-color); /* Bright red color for visibility */
+            color: var(--error-color); 
             font-size: 12px;
             margin-top: 5px;
         }
@@ -96,102 +94,126 @@
             font-size: 12px;
             margin-top: 5px;
         }
+
+        @media screen and (max-width: 768px) {
+            main {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            h1, h2, h3 {
+                font-size: 1.2em;
+            }
+
+            input[type="text"], input[type="email"] {
+                font-size: 14px;
+            }
+
+            .terms {
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            button[type="submit"] {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
     </style>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const firstNameField = document.getElementById('first_name');
-        const lastNameField = document.getElementById('last_name');
-        const emailField = document.getElementById('email');
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const firstNameField = document.getElementById('first_name');
+            const lastNameField = document.getElementById('last_name');
+            const emailField = document.getElementById('email');
 
-        firstNameField.addEventListener('input', function() {
-            const firstNameError = document.getElementById('first_name_error');
-            if (firstNameField.value.length < 2) {
-                firstNameError.textContent = 'First name must be at least 2 characters';
-            } else {
-                firstNameError.textContent = '';
-            }
+            firstNameField.addEventListener('input', function() {
+                const firstNameError = document.getElementById('first_name_error');
+                if (firstNameField.value.length < 2) {
+                    firstNameError.textContent = 'First name must be at least 2 characters';
+                } else {
+                    firstNameError.textContent = '';
+                }
+            });
+
+            lastNameField.addEventListener('input', function() {
+                const lastNameError = document.getElementById('last_name_error');
+                if (lastNameField.value.length < 2) {
+                    lastNameError.textContent = 'Last name must be at least 2 characters';
+                } else {
+                    lastNameError.textContent = '';
+                }
+            });
+
+            emailField.addEventListener('input', function() {
+                const emailError = document.getElementById('email_error');
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                if (!emailPattern.test(emailField.value)) {
+                    emailError.textContent = 'Please enter a valid email address';
+                } else {
+                    emailError.textContent = '';
+                }
+            });
         });
 
-        lastNameField.addEventListener('input', function() {
-            const lastNameError = document.getElementById('last_name_error');
-            if (lastNameField.value.length < 2) {
-                lastNameError.textContent = 'Last name must be at least 2 characters';
-            } else {
-                lastNameError.textContent = '';
+        function checkTerms(event) {
+            const checkBox = document.getElementById('agree');
+            const agreeError = document.getElementById('agree_error');
+
+            if (!checkBox.checked) {
+                agreeError.textContent = 'Please agree to the terms before proceeding.';
+                event.preventDefault();
+                return false;
             }
-        });
+            agreeError.textContent = '';
 
-        emailField.addEventListener('input', function() {
-            const emailError = document.getElementById('email_error');
-            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if (!emailPattern.test(emailField.value)) {
-                emailError.textContent = 'Please enter a valid email address';
-            } else {
-                emailError.textContent = '';
-            }
-        });
-    });
-
-    function checkTerms(event) {
-        const checkBox = document.getElementById('agree');
-        const agreeError = document.getElementById('agree_error');
-
-        if (!checkBox.checked) {
-            agreeError.textContent = 'Please agree to the terms before proceeding.';
-            event.preventDefault();
-            return false;
+            const title = "<?php echo urlencode($_SESSION['eeg_title']); ?>";
+            const eegLink = "<?php echo urlencode($_SESSION['eeg_link']); ?>";
+            const eegID = "<?php echo urlencode($_SESSION['eeg_id']); ?>";
+            window.location.href = "downloadPage.php?title=" + title + "&eegLink=" + eegLink + "&eegID=" + eegID;
+            return true;
         }
-        agreeError.textContent = '';
+    </script>
 
-        const title = "<?php echo urlencode($_SESSION['eeg_title']); ?>";
-        const eegLink = "<?php echo urlencode($_SESSION['eeg_link']); ?>";
-        const eegID = "<?php echo urlencode($_SESSION['eeg_id']); ?>";
-        window.location.href = "downloadPage.php?title=" + title + "&eegLink=" + eegLink + "&eegID=" + eegID;
-        return true;
-    }
-</script>
+    <form action="." method="post" onsubmit="return checkTerms(event);">
+        <input type="hidden" name="action" value="eeg_agree">
 
-<form action="." method="post" onsubmit="return checkTerms(event);">
-    <input type="hidden" name="action" value="eeg_agree">
+        <h1>EEG Download</h1>
 
-    <h1>EEG Download</h1>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required minlength="2" maxlength="50" placeholder="Enter your first name">
+        <span id="first_name_error" class="error-message"></span>
 
-    <label for="first_name">First Name:</label>
-    <input type="text" id="first_name" name="first_name" required minlength="2" maxlength="50" placeholder="Enter your first name">
-    <span id="first_name_error" class="error-message"></span>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required minlength="2" maxlength="50" placeholder="Enter your last name">
+        <span id="last_name_error" class="error-message"></span>
 
-    <label for="last_name">Last Name:</label>
-    <input type="text" id="last_name" name="last_name" required minlength="2" maxlength="50" placeholder="Enter your last name">
-    <span id="last_name_error" class="error-message"></span>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        <span id="email_error" class="error-message"></span>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required placeholder="Enter your email address">
-    <span id="email_error" class="error-message"></span>
+        <h2>EEG Data - Terms and Conditions</h2>
+        <div class="terms">
+            <p>Terms and Conditions for Responsible Use of Medical Data</p>
+            <ol>
+                <li><strong>Data Access and Use:</strong> Access to medical data provided through this platform is granted solely for legitimate research and educational purposes.</li>
+                <li><strong>Confidentiality:</strong> Users are required to maintain strict confidentiality regarding any identifiable medical data accessed through this platform.</li>
+                <li><strong>Ethical Considerations:</strong> Users agree to conduct their activities with integrity and respect for the rights and welfare of individuals whose medical data is accessed.</li>
+                <li><strong>Responsibility:</strong> Users acknowledge that they are solely responsible for their use of medical data accessed through this platform.</li>
+                <li><strong>Accountability:</strong> Users agree to cooperate fully in any investigations or audits related to the use of medical data accessed through this platform.</li>
+            </ol>
+            <p><strong>Termination of Access:</strong> The platform provider reserves the right to suspend or terminate user access to medical data at any time and for any reason.</p>
+            <p><em>By accessing and using medical data through this platform, users acknowledge their acceptance of these terms and agree to abide by them in their entirety.</em></p>
+        </div>
 
-    <h2>EEG Data - Terms and conditions</h2>
-    <div class="terms">
-        <p>Terms and Conditions for Responsible Use of Medical Data</p>
-        <ol>
-            <li><strong>Data Access and Use:</strong> Access to medical data provided through this platform is granted solely for legitimate research and educational purposes.</li>
-            <li><strong>Confidentiality:</strong> Users are required to maintain strict confidentiality regarding any identifiable medical data accessed through this platform.</li>
-            <li><strong>Ethical Considerations:</strong> Users agree to conduct their activities with integrity and respect for the rights and welfare of individuals whose medical data is accessed.</li>
-            <li><strong>Responsibility:</strong> Users acknowledge that they are solely responsible for their use of medical data accessed through this platform.</li>
-            <li><strong>Accountability:</strong> Users agree to cooperate fully in any investigations or audits related to the use of medical data accessed through this platform.</li>
-        </ol>
-        <p><strong>Termination of Access:</strong> The platform provider reserves the right to suspend or terminate user access to medical data at any time and for any reason.</p>
-        <p><em>By accessing and using medical data through this platform, users acknowledge their acceptance of these terms and agree to abide by them in their entirety.</em></p>
-    </div>
+        <h3>Do you agree to the above terms and conditions?</h3>
+        <label for="agree">
+            <input type="checkbox" id="agree"> I agree
+        </label>
+        <span id="agree_error" class="error-message"></span>
 
-    <h3>Do you agree to the above terms and conditions?</h3>
-   <label for="agree">
-    <input type="checkbox" id="agree" style="display: flex-start; align-items: center;" > I agree
-</label>
-    <span id="agree_error" class="error-message"></span>
-
-    <button type="submit">Submit</button>
-</form>
-
+        <button type="submit">Submit</button>
+    </form>
 </main>
 
 <?php include '../view/footer.php'; ?>

@@ -34,7 +34,7 @@
             display: flex;
             justify-content: center;
             padding: 20px;
-            min-height: calc(100vh - 100px); /* Ensures main height minus header and footer */
+            min-height: calc(100vh - 100px); 
         }
 
         .mgmtMenu {
@@ -59,27 +59,27 @@
 
         .section-container {
             display: flex;
-            justify-content: space-between; /* Space cards evenly */
-            gap: 20px; /* Space between cards */
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: space-between; 
+            gap: 20px; 
+            flex-wrap: wrap; 
         }
 
-        /* Updated card styles */
+        
         .card {
             background-color: var(--col1);
             color: var(--col2);
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            flex: 1 1 calc(33.333% - 20px); /* Make cards flexible, 3 per row */
-            max-width: calc(33.333% - 20px); /* Limit width to fit three per row */
+            flex: 1 1 calc(33.333% - 20px); 
+            max-width: calc(33.333% - 20px); 
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             height: 50vh;
-            flex-direction: column; /* Stack content vertically */
-            align-items: center; /* Center content horizontally */
-            gap: 5vh; /* Space between buttons/forms */
+            flex-direction: column; 
+            align-items: center; 
+            gap: 5vh; 
         }
 
         .card:hover {
@@ -87,7 +87,7 @@
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
         }
 
-        /* Updated button and form styles */
+        
         button, input[type="submit"] {
             background-color: var(--col12);
             color: var(--col1);
@@ -97,24 +97,24 @@
             font-size: 14px;
             font-weight: 600;
             cursor: pointer;
-            width: 100%; /* Full width of the card */
+            width: 100%; 
             text-align: center;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         form {
-            width: 100%; /* Match form width to the card */
+            width: 100%; 
             display: flex;
-            justify-content: center; /* Center-align the form content */
+            justify-content: center; 
         }
 
-        /* Fix hover effects */
+        
         button:hover, input[type="submit"]:hover {
             background-color: var(--col2);
-            transform: translateY(-3px); /* Lift effect */
+            transform: translateY(-3px); 
         }
 
-        /* Footer styling */
+        
         footer {
             padding: 10px;
             background-color: var(--col2);
@@ -126,11 +126,11 @@
         /* Responsive adjustments for mobile screens */
         @media (max-width: 900px) {
             .section-container {
-                justify-content: center; /* Center cards on smaller screens */
+                justify-content: center; 
             }
 
             .card {
-                flex: 1 1 100%; /* Full width on smaller screens */
+                flex: 1 1 100%; 
                 max-width: 100%;
                 height: fit-content;
             }
@@ -138,7 +138,7 @@
 
         @media (max-width: 600px) {
             button, input[type="submit"] {
-                font-size: 12px; /* Smaller font for mobile */
+                font-size: 12px; 
                 padding: 8px 10px;
             }
 

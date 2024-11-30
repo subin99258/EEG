@@ -2,20 +2,20 @@
 
 <style>
     :root {
-        --col1: #FFB448; /* Highlight color */
-        --col2: #3C2D4D; /* Form background */
-        --col3: #EDEDEA; /* Body background */
+        --col1: #FFB448; 
+        --col2: #3C2D4D; 
+        --col3: #EDEDEA; 
 
-        --col11: #FFC77D; /* Hover color */
-        --col12: #645D7B; /* Input background */
+        --col11: #FFC77D; 
+        --col12: #645D7B; 
 
         --col21: #FFD8A2;
         --col22: #8D879B;
 
-        --text: var(--col1); /* Text color */
+        --text: var(--col1); 
     }
 
-    /* Flex layout for the body to position footer at the bottom */
+
     body {
 
            
@@ -33,12 +33,12 @@
     }
 
     main {
-        flex-grow: 1; /* Ensures main content fills the available space */
+        flex-grow: 1; 
         padding: 50px 20px;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Centers grid-container in the middle */
+        justify-content: center; 
     }
 
     main h1 {
@@ -47,7 +47,7 @@
         margin-bottom: 20px;
     }
 
-    /* Grid layout for evenly spaced items */
+    
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -72,7 +72,7 @@
         background-color: var(--col11);
     }
 
-    /* Changes h4 color to --col2 on grid-item hover */
+    
     .grid-item h4 {
         font-size: 1.5em;
         margin-bottom: 15px;

@@ -14,7 +14,7 @@ use PHPMailer\PHPMailer\Exception;
 $servername = "localhost";
 $username = "eeg_publications_user";
 $password = "pa55word";
-$dbname = "eeg_data_and_publication_platform";
+$dbname = "htdocs3";
 
 // Check if token is provided
 $token = isset($_GET['token']) ? $_GET['token'] : null;
@@ -50,7 +50,7 @@ if ($token) {
 		$variable = str_replace("..", "", $path);
 		$variable = str_replace("\\", "/", $variable);
             // Generate the download link (Assuming you have a URL for the download file)
-            $downloadLink = "http://localhost{$variable}";
+            $downloadLink = "https://e72d-149-167-144-177.ngrok-free.app{$variable}";
                      
             $mail = new PHPMailer(); // Create an instance of PHPMailer
             $mail->isSMTP();
@@ -58,11 +58,11 @@ if ($token) {
             $mail->Port = 587;
             $mail->SMTPSecure = 'tls';
             $mail->SMTPAuth = true;
-            $mail->Username = 'deshajaausi@gmail.com';
-            $mail->Password = 'lfmd bxyx zdqc mrog'; 
+            $mail->Username = 'subinmaharjan01@gmail.com';
+            $mail->Password = 'jqan tbgo hexr lgms'; 
 
             // Set email recipients
-            $mail->setFrom('deshajaausi@gmail.com', 'EEG and Publications Platform');
+            $mail->setFrom('subinmaharjan01@gmail.com', 'EEG and Publications Platform');
             $mail->addAddress($email); // Send to the user's email
 
             // Email content

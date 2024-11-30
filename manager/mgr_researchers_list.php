@@ -46,7 +46,7 @@
     .expanded-content {
         display: grid;
         grid-template-columns: 150px auto;
-        gap: 10px 20px; /* Provides uniform spacing between label and data */
+        gap: 10px 20px; 
         align-items: center;
     }
 

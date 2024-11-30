@@ -29,7 +29,7 @@
             font-family: 'Arial', sans-serif;
    background: url('/img/usq1.jpg') no-repeat center center;
              background-size: cover;
-	position: relative; /* Make the overlay position relative to this container */
+	position: relative; 
     display: inline-block;
             color: var(--text-color);
             position: relative;
@@ -37,7 +37,7 @@ background-color: rgba(255, 255, 255, 0.5);
  background-blend-mode: overlay;
         }
 
-        /* New wrapper to center contact section */
+        
         .contact-wrapper {
             display: flex;
             justify-content: center;
@@ -46,18 +46,18 @@ background-color: rgba(255, 255, 255, 0.5);
             padding: 20px;
         }
 
-        /* Main contact container with equal height for children */
+       
         .contact-container {
             display: flex;
             justify-content: space-between;
-            align-items: stretch; /* Ensures equal height */
+            align-items: stretch; 
             flex-wrap: wrap;
             width: 100%;
             max-width: 1200px;
             gap: 20px;
         }
 
-        /* Contact sections with equal width and height */
+        
         .contact-section {
             flex: 1 1 45%;
             max-width: 500px;
@@ -68,10 +68,10 @@ background-color: rgba(255, 255, 255, 0.5);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Spreads content vertically */
+            justify-content: space-between; 
         }
 
-        /* Contact Info Section */
+        
         .contact-info h2, .contact-form h2 {
             font-size: 28px;
             margin-bottom: 20px;
@@ -102,7 +102,7 @@ background-color: rgba(255, 255, 255, 0.5);
             font-size: 16px;
         }
 
-        /* Contact Form Section */
+        
         .contact-form input,
         .contact-form textarea {
             width: 100%;
@@ -131,20 +131,20 @@ background-color: rgba(255, 255, 255, 0.5);
             padding: 12px;
             border-radius: 4px;
             transition: background-color 0.3s ease;
-            align-self: center; /* Centers the button horizontally */
+            align-self: center; 
         }
 
         .contact-form input[type="submit"]:hover {
             background-color: var(--col21);
         }
 
-        /* Hover effects */
+        
         .contact-form input:focus,
         .contact-form textarea:focus {
             border-color: var(--button-color);
         }
 
-        /* Responsive adjustments */
+        /* Responsive  */
         @media (max-width: 768px) {
             .contact-container {
                 flex-direction: column;

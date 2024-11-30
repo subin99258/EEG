@@ -3,12 +3,12 @@ include '../view/header.php'; ?>
 <main>
     <style>
         :root {
-            --col1: #FFB448; /* Primary color */
-            --col2: #3C2D4D; /* Background color */
-            --col3: #EDEDEA; /* Text background */
-            --btn-hover: #FFC77D; /* Button hover color */
-            --btn-color: #3C2D4D; /* Button text color */
-            --text-color: #3C2D4D; /* Main text color */
+            --col1: #FFB448; 
+            --col2: #3C2D4D; 
+            --col3: #EDEDEA; 
+            --btn-hover: #FFC77D; 
+            --btn-color: #3C2D4D; 
+            --text-color: #3C2D4D; 
         }
 
         body {
@@ -23,7 +23,7 @@ include '../view/header.php'; ?>
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: calc(100vh - 100px); /* Subtract header/footer */
+            min-height: calc(100vh - 100px); 
             background-color: var(--col3);
         }
 

@@ -15,8 +15,10 @@ ini_set('error_log', $headerLogFile);
 try {
     ?>
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EEG Data and Publication</title>
         <link rel="stylesheet" type="text/css" href="/main.css">
         <script src="https://kit.fontawesome.com/5b50e2fea3.js" crossorigin="anonymous"></script>
@@ -25,8 +27,8 @@ try {
                 --col1: #FFB448; /* Highlight color */
                 --col2: #3C2D4D; /* Form background */
                 --col3: #EDEDEA; /* Body background */
-                --col11: #FFC77D; /* Hover color */
-                --col12: #645D7B; /* Input background */
+                --col11: #FFC77D; 
+                --col12: #645D7B; 
                 --col21: #FFD8A2;
                 --col22: #8D879B;
             }
@@ -38,24 +40,24 @@ try {
                 padding: 0;
             }
 
-            /* Header Section */
             .header {
                 background-color: var(--col2);
                 color: var(--col1);
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 align-items: center;
+                padding: 10px 20px;
                 flex-wrap: wrap;
             }
 
             .header-left {
                 display: flex;
                 align-items: center;
-                
+                gap: 10px;
             }
 
             .header-left img {
-                max-width: 50px;
+                max-width: 80px;
                 height: auto;
             }
 
@@ -67,12 +69,11 @@ try {
 
             .menu-toggle {
                 display: none;
-                font-size: 1.5em;
+                font-size: 1.8em;
                 cursor: pointer;
                 color: var(--col1);
             }
 
-            /* Navigation Menu */
             .nav {
                 display: flex;
                 justify-content: flex-end;
@@ -82,12 +83,10 @@ try {
                 margin: 0;
                 flex-grow: 1;
                 transition: max-height 0.3s ease, opacity 0.3s ease;
-                max-height: none;
-                opacity: 1;
-                overflow: hidden;
             }
 
             .nav.show {
+                display: flex;
                 max-height: 500px;
                 opacity: 1;
             }
@@ -108,7 +107,6 @@ try {
                 color: var(--col2);
             }
 
-            /* Buttons Section */
             .header-buttons {
                 display: flex;
                 gap: 10px;
@@ -128,16 +126,16 @@ try {
                 transition: background-color 0.3s ease, color 0.3s ease;
             }
 
-            .signup-btn:hover {
-                background-color: var(--col11);
-            }
-
+            .signup-btn:hover,
             .signin-btn:hover {
                 background-color: var(--col11);
                 color: var(--col2);
             }
 
-            /* Dropdown for Sign In */
+            .signin-wrapper {
+                position: relative;
+            }
+
             .dropdown {
                 display: none;
                 position: absolute;
@@ -161,8 +159,11 @@ try {
                 color: var(--col1);
             }
 
-            .signin-wrapper:hover .dropdown {
-                display: block;
+          
+            @media screen and (min-width: 769px) {
+                .signin-wrapper:hover .dropdown {
+                    display: block;
+                }
             }
 
             /* Responsive Design */
@@ -179,14 +180,13 @@ try {
                 .nav {
                     display: none;
                     flex-direction: column;
-                    gap: 10px;
                     width: 100%;
-                    text-align: center;
                     background-color: var(--col2);
                     padding: 10px;
                     max-height: 0;
                     opacity: 0;
                     overflow: hidden;
+                    transition: max-height 0.3s ease, opacity 0.3s ease;
                 }
 
                 .nav.show {
@@ -202,13 +202,12 @@ try {
             }
         </style>
     </head>
-
     <body>
         <header class="header">
             <div class="header-left">
                 <img alt="University of Southern Queensland" 
                      src="https://unisq.edu.au/Content/USQ/Charlie/Images/unisq-logo-acronym-white.svg" 
-                     style="max-width: 100px; height: auto; display: block; margin-right: 50px;">
+                     style="max-width: 100px; height: auto; display: block;">
                 <h1>EEG Data and Publication</h1>
             </div>
 
@@ -260,6 +259,24 @@ try {
                 const navMenu = document.getElementById("navMenu");
                 navMenu.classList.toggle("show");
             }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const signinBtn = document.querySelector('.signin-btn');
+                const dropdown = document.querySelector('.dropdown');
+
+                // Toggle dropdown on click for mobile screens
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    signinBtn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent event bubbling
+                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                    });
+
+                    // Close dropdown when clicking outside
+                    document.addEventListener('click', () => {
+                        dropdown.style.display = 'none';
+                    });
+                }
+            });
         </script>
     </body>
     </html>

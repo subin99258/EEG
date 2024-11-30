@@ -4,7 +4,7 @@
   
    body {
             font-family: Arial, sans-serif;
-           background-color: #EBE8FC; /* Changed to var(--col1) for a vibrant background */
+           background-color: #EBE8FC; 
         color:  #3C2D4D;
             margin: 0;
             padding: 0px;
@@ -54,20 +54,20 @@
         display: table-row;
     }
 
-    /* Aligning expanded row data with headings on the left and data on the right */
+    
     .expanded-content {
         display: grid;
         grid-template-columns: 150px auto;
         gap: 10px;
     }
 
-    /* Align the Action button inline */
+    
     .expanded-content .action {
         display: flex;
         align-items: center;
     }
 
-    /* Button Styling */
+    
     .button {
         background-color: #3C2D4D;
         color: white;
@@ -85,12 +85,12 @@
         color: #3C2D4D;
     }
 
-/* Flex container for the action and button */
+
 div[style*="display: flex"] {
     align-items: center;
-    gap: 10px; /* Adds the 10px gap between "Action" and the button */
+    gap: 10px; 
     margin: 0;
-    padding-top: 10px; /* Adjusts vertical padding for alignment */
+    padding-top: 10px; 
 }
 
 .button {
@@ -114,7 +114,7 @@ div[style*="display: flex"] {
         overflow-x: auto;
     }
 
-    /* Clicked/Expanded Row Background Color Change */
+    
     .main-row.clicked {
         background-color: #FFE5B4;
     }
@@ -260,10 +260,10 @@ document.addEventListener('DOMContentLoaded', function() {
         row.addEventListener('click', function() {
             if (detailsRow.classList.contains('expanded')) {
                 detailsRow.classList.remove('expanded');
-                row.style.backgroundColor = '';  // Reset color
+                row.style.backgroundColor = '';  
             } else {
                 detailsRow.classList.add('expanded');
-                row.style.backgroundColor = '#FFE5B4';  // Change color on expand
+                row.style.backgroundColor = '#FFE5B4';  
 
                 detailsRow.scrollIntoView({
                     behavior: 'smooth',

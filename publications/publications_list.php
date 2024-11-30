@@ -22,12 +22,12 @@ form {width: 15%;
 }
   body {
             font-family: Arial, sans-serif;
-           background-color: #EBE8FC; /* Changed to var(--col1) for a vibrant background */
+           background-color: #EBE8FC; 
         color:  #3C2D4D;
             margin: 0;
             padding: 0px;
         }
-        /*Style for Description*/
+        
         .blurb {
     color: #FFB448;
     display: flex;              
@@ -46,7 +46,7 @@ form {width: 15%;
     font-size: 1.2em;
     margin-bottom: 30px;
     }
-        /* Styling for Search and Sort */
+        
         .search-sort-container {
             display: flex;
             justify-content: space-between;
@@ -118,7 +118,7 @@ form {width: 15%;
             padding: 15px;
         }
 
-        /* Aligning expanded row data with headings on the left and data on the right */
+        
         .expanded-content {
             display: grid;
             grid-template-columns: 150px auto;
@@ -153,7 +153,7 @@ form {width: 15%;
             overflow-x: auto;
         }
 
-        /* Clicked/Expanded Row Background Color Change */
+        
         .main-row.clicked {
             background-color: #FFE5B4;
         }
@@ -167,7 +167,7 @@ form {width: 15%;
                    
                     <th>Title</th>
                     <th>Author</th>
-                    <th>Date</th> <!-- Date column added -->
+                    <th>Date</th> 
                 </tr>
             </thead>
             <tbody>

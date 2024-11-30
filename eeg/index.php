@@ -118,7 +118,7 @@ if ($action === 'list_eeg') {
                     "EEG ID: {$eegID}",
                     "EEG Title: {$eegTitle}",
                     "ID : {$token}",
-               		   "<a href='http://localhost/accept.php?token={$token}' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; 				border-radius: 5px;'>Accept request</a>"
+               		   "<a href='https://946c-149-167-144-177.ngrok-free.app/accept.php?token={$token}' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; 				border-radius: 5px;'>Accept request</a>"
 		
             ];
 

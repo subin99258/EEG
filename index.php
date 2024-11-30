@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEG Data Platform</title>
-    <!-- Link to external CSS file -->
+  
 </head>
 
 <body>
@@ -35,19 +35,19 @@ body {
 .hero {
     background: url('/img/usq1.jpg') no-repeat center center;
     background-size: cover;
-	position: relative; /* Make the overlay position relative to this container */
+	position: relative; 
     display: inline-block;
     color:#3C2D4D;
 	
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh; /* Flexible height */
+    min-height: 60vh; 
     text-align: center;
     flex-direction: column;
     padding: 20px;
-    margin-top: 20px; /* Space between header and hero */
-    z-index: 1; /* Ensures hero does not overlap header */
+    margin-top: 20px; 
+    z-index: 1; 
 }
 
 .hero::before {
@@ -57,18 +57,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.5); /* Adjust color and opacity as needed */
+    background: rgba(255, 255, 255, 0.5); 
     z-index: 1;
-    pointer-events: none; /* Ensures the overlay doesn't interfere with any clickable content */
+    pointer-events: none; 
 }
 
-/* Ensure content inside .hero remains visible above the overlay */
+
 .hero * {
     position: relative;
     z-index: 2;
 }
 
-/* Hero Heading and Paragraph */
+
 .hero h1 {
     font-size: 3em;
     margin-bottom: 110px;
@@ -87,7 +87,7 @@ body {
 
 }
 
-/* Call-to-Action Button */
+
 .cta-button {
     background: #3C2D4D;
     color: #FFB448;
@@ -171,7 +171,7 @@ body {
         padding: 15px;
         min-height: 50vh;
         font-size: 1rem;
-        margin-top: 50px; /* Increase top margin for smaller screens */
+        margin-top: 50px; 
     }
 
     .hero h1 {

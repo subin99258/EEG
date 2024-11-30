@@ -12,7 +12,7 @@
 
     
 
-    <!-- Style for responsive form -->
+    
     <style>
         * {
             box-sizing: border-box;
@@ -20,7 +20,7 @@
 
         body {
             font-family: Arial, sans-serif;
-           background-color: #3C2D4D; /* Changed to var(--col1) for a vibrant background */
+           background-color: #3C2D4D; 
         color: var(--col2);
             margin: 0;
             padding: 0px;
@@ -128,7 +128,7 @@
             <?php foreach ($approvedEEG as $EEG) : ?>
                 <option value="<?php echo htmlspecialchars($EEG['eegID']); ?>"><?php echo htmlspecialchars($EEG['eegTitle']); ?></option>
             <?php endforeach; ?>
-            <!-- Dynamic options would be here -->
+            
         </select>
 
         <label for="pubToUpload">Select file to upload:</label>

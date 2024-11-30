@@ -8,7 +8,7 @@ include '../view/header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEG Data</title>
     <style>
-        /* Container to ensure footer stays at the bottom */
+        
         body, html {
             display: flex;
             flex-direction: column;
@@ -28,7 +28,7 @@ include '../view/header.php';
             color: #333;
         }
 
-        /* Search form styling */
+       
         .search-container {
             margin-bottom: 20px;
         }
@@ -98,7 +98,7 @@ include '../view/header.php';
                 color: #3C2D4D;
             }
 
-            /* Labels for each data cell on smaller screens */
+      
           
             td:nth-of-type(1)::before { content: "Title"; }
             td:nth-of-type(2)::before { content: "Description"; }
@@ -123,7 +123,7 @@ include '../view/header.php';
             background-color: #645D7B;
         }
 
-        /* Footer styling to stay at the bottom */
+     
         footer {
             padding: 10px;
             background-color: #3C2D4D;

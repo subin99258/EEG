@@ -2,19 +2,19 @@
 <main>
     <style>
         :root {
-            --col1: #FFB448; /* Highlight color */
-            --col2: #3C2D4D; /* Form background */
-            --col3: #EDEDEA; /* Body background */
-            --col11: #FFC77D; /* Hover color */
-             /* Input background */
+            --col1: #FFB448; 
+            --col2: #3C2D4D; 
+            --col3: #EDEDEA; 
+            --col11: #FFC77D; 
+             
             --col21: #FFD8A2;
             --col22: #8D879B;
-            --text-color: var(--col1); /* Text color */
-            --button-color: #007BFF; /* Default button color */
-            --button-hover-color: #0056b3; /* Button hover color */
+            --text-color: var(--col1); 
+            --button-color: #007BFF; 
+            --button-hover-color: #0056b3; 
         }
 
-        /* Set body and HTML layout */
+      
         body, html {
             margin: 0;
             padding: 0;
@@ -26,7 +26,7 @@
             min-height: 100vh;
         }
 
-        /* Centering container in main */
+        
         main {
             display: flex;
             justify-content: center;
@@ -35,7 +35,7 @@
             padding: 20px;
         }
 
-        /* Dedicated container for the research details form */
+        
         .research-details-container {
             width: 100%;
             max-width: 600px;
@@ -53,7 +53,7 @@
             font-size: 2em;
         }
 
-        /* Form styling */
+       
         form {
             display: grid;
             grid-template-columns: 1fr;
@@ -105,7 +105,7 @@
             margin-bottom: 5px;
         }
 
-        /* Responsive adjustments */
+        
         @media (max-width: 768px) {
             .research-details-container {
                 padding: 20px;
@@ -120,7 +120,7 @@
             }
         }
 
-        /* Footer styling */
+        
         footer {
             padding: 10px;
             background-color: var(--col2);

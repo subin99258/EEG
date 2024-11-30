@@ -68,14 +68,16 @@ To create a new admin user:
 1) Click **Go**
 
 The default users for both the MySQL DB and the EEG platform have now been deleted.  Credentials for the new MySQL database administrative user must be reflected under the appropriate variable within the `/model/database.php` file. 
+"Alter "$dsn = 'mysql:host=localhost;dbname=<dbname>' according to your database name"
 </br>
 ### Email setup
 To permit the mailing of notifications, the email credentials must be added to two files, replace the existing filler values with those of the sending account.
 Please note, currently only Gmail accounts are supported.  Follow the instruction [here](https://myaccount.google.com/apppasswords) to create an appropriate app password which is to be used when populating the below files as appropriate.
 
 **Files to alter:** 
-`/contactUs/index.php` (lines 63 and 64)
-`/eeg/index.php` (lines 97 and 98)
+`/contactUs/index.php` (lines 57,58, 63 and 64)
+`/eeg/index.php` (lines 102,103, 106,107, and 121(Live server link))
+`/researcher/index.php` (lines 164,165,168,169 and 334,335,338,339 also, [353 & 355 (replace with live server link)], 480,481,484,485,[498 & 500(replace with live server link)])
 
 ```
             // specify SMTP credentials

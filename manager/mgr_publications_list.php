@@ -8,7 +8,7 @@ include '../view/header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications</title>
     <style>
-        /* Container to ensure footer stays at the bottom */
+       
         body, html {
             display: flex;
             flex-direction: column;
@@ -28,7 +28,7 @@ include '../view/header.php';
             color: #3C2D4D;
         }
 
-        /* Search form styling */
+       
         .search-container {
             margin-bottom: 20px;
         }
@@ -42,7 +42,7 @@ include '../view/header.php';
             font-size: 1em;
         }
 
-        /* Table styling */
+       
         table {
             width: 100%;
             border-collapse: collapse;
@@ -64,7 +64,7 @@ include '../view/header.php';
             color: #3C2D4D;
         }
 
-        /* Responsive table and button layout for smaller screens */
+        
         @media (max-width: 768px) {
             table, thead, tbody, th, td, tr {
                 display: block;
@@ -99,7 +99,7 @@ include '../view/header.php';
                 color: #3C2D4D;
             }
 
-            /* Labels for each data cell on smaller screens */
+           
            
             td:nth-of-type(1)::before { content: "Title"; }
             td:nth-of-type(2)::before { content: "Description"; }
@@ -107,7 +107,7 @@ include '../view/header.php';
             td:nth-of-type(4)::before { content: "Approval Status"; }
             td:nth-of-type(5)::before { content: "Action"; }
 
-            /* Display buttons horizontally on smaller screens */
+          
             .button-group {
                 display: flex;
                 gap: 10px;
@@ -116,7 +116,7 @@ include '../view/header.php';
             }
         }
 
-        /* Form buttons */
+       
         input[type="submit"] {
             padding: 8px 12px;
             border: none;
@@ -132,7 +132,7 @@ include '../view/header.php';
             background-color: #645D7B;
         }
 
-        /* Footer styling */
+        
         footer {
             padding: 10px;
             background-color: #3C2D4D;

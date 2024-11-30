@@ -14,7 +14,7 @@ use PHPMailer\PHPMailer\Exception;
 $servername = "localhost";
 $username = "eeg_publications_user";
 $password = "pa55word";
-$dbname = "eeg_data_and_publication_platform";
+$dbname = "htdocs3";
 
 // Check if token is provided
 $Token_Eeg_ID = isset($_GET['Token_Eeg_ID']) ? $_GET['Token_Eeg_ID'] : null;

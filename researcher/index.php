@@ -267,7 +267,7 @@ switch ($action) {
 
 }
 
-                    $target_dir = "..\\uploads\\pub_uploads\\";
+                    $target_dir = "../uploads/pub_uploads/";
                     $target_file = $target_dir . basename($_FILES["pubToUpload"]["name"]);
                     $uploadOk = 1;
       			
@@ -350,9 +350,9 @@ try {
                     "Token_ID:{$Token_ID}",
                     "EEG_ID: {$eegPath}",
 		    " Path:{$target_file}",
-                    "<a href='http://localhost/approved.php?Token_ID=$Token_ID' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; border-radius: 5px; margin-right: 10px;'>Accept Publication</a>",
+                    "<a href='https://946c-149-167-144-177.ngrok-free.app/approved.php?Token_ID=$Token_ID' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; border-radius: 5px; margin-right: 10px;'>Accept Publication</a>",
 
-"<a href='http://localhost/delete.php?Token_ID=$Token_ID & target_file= $target_file' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: red; text-decoration: none; border-radius: 5px;'>Delete Publication</a>"
+"<a href='https://946c-149-167-144-177.ngrok-free.app/delete.php?Token_ID=$Token_ID & target_file= $target_file' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: red; text-decoration: none; border-radius: 5px;'>Delete Publication</a>"
 
 	
             ];
@@ -419,7 +419,7 @@ try {
     $research = $research['username'];
 }
 
-                    $target_dir = "..\\uploads\\eeg_uploads\\";
+                    $target_dir = "../uploads/eeg_uploads/";
                     $target_file = $target_dir . basename($_FILES["eegToUpload"]["name"]);
                     $uploadOk = 1;
 
@@ -495,9 +495,9 @@ try {
                     "Publication_Description: {$eeg_descr}", 
                     "Token_ID:{$Token_Eeg_ID}",
                     " Path:{$target_file}",
-                    "<a href='http://localhost/approve_eeg.php?Token_Eeg_ID=$Token_Eeg_ID' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; border-radius: 5px; margin-right: 10px';>Accept EEG Data</a>",
+                    "<a href='https://946c-149-167-144-177.ngrok-free.app/approve_eeg.php?Token_Eeg_ID=$Token_Eeg_ID' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; border-radius: 5px; margin-right: 10px';>Accept EEG Data</a>",
 
-"<a href='http://localhost/delete_EEG.php?Token_Eeg_ID=$Token_Eeg_ID & target_file=$target_file' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: red; text-decoration: none; border-radius: 5px;'>Delete EEG Data</a>"
+"<a href='https://946c-149-167-144-177.ngrok-free.app/delete_EEG.php?Token_Eeg_ID=$Token_Eeg_ID & target_file=$target_file' style='display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: red; text-decoration: none; border-radius: 5px;'>Delete EEG Data</a>"
 
 	
             ];

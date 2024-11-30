@@ -8,7 +8,7 @@ include '../view/header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Public User Downloads</title>
     <style>
-        /* Define container to keep footer at the bottom */
+      
         body, html {
             display: flex;
             flex-direction: column;
@@ -28,7 +28,7 @@ include '../view/header.php';
             color: #3C2D4D;
         }
 
-        /* Search form styling */
+       
         .search-container {
             margin-bottom: 20px;
         }
@@ -42,7 +42,7 @@ include '../view/header.php';
             font-size: 1em;
         }
 
-        /* Table styling */
+        
         table {
             width: 100%;
             border-collapse: collapse;
@@ -99,7 +99,7 @@ include '../view/header.php';
                 color: #3C2D4D;
             }
 
-            /* Labels for each data cell on smaller screens */
+           
             td:nth-of-type(1)::before { content: "Download ID"; }
             td:nth-of-type(2)::before { content: "Title"; }
             td:nth-of-type(3)::before { content: "EEG ID"; }
@@ -108,7 +108,7 @@ include '../view/header.php';
             td:nth-of-type(6)::before { content: "Request Date"; }
         }
 
-        /* Footer styling */
+       
         footer {
             padding: 10px;
             background-color: #3C2D4D;
